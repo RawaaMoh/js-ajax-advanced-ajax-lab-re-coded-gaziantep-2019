@@ -4,7 +4,6 @@ function getRepositories(){
   req.open('GET', 'https://api.github.com/users/octocat/repos');
   req.send();
 }
-
 function showRepositories(event, data) {
   //we will use JSON.parse here to parse the response string into proper objects !
   const repos = JSON.parse(this.responseText);
